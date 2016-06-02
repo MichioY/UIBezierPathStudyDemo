@@ -9,7 +9,9 @@ let myView = UIView(frame:CGRectMake(0, 0, 300, 200))
 XCPlaygroundPage.currentPage.liveView = myView
 myView.backgroundColor = UIColor.whiteColor()
 
-/*
+
+/************ 打开相应的注释, 就会自动显示在Timeline里面了*******/
+
 /***********************基础使用****************************/
 // 创建layer
 let myLayer = CAShapeLayer()
@@ -34,19 +36,18 @@ let path3 = UIBezierPath(arcCenter: myView.center, radius: radius, startAngle: s
 //赋值path绘图案
 myLayer.path = path3.CGPath;
 //layer填充颜色
-//myLayer.fillColor = UIColor.redColor().CGColor
+myLayer.fillColor = UIColor.redColor().CGColor
 
-myLayer.fillColor = UIColor.clearColor().CGColor
+//myLayer.fillColor = UIColor.clearColor().CGColor
 //layer描边颜色
 myLayer.strokeColor = UIColor.whiteColor().CGColor
 //添加layerd到view
 myView.layer.addSublayer(myLayer)
-*/
+
 /***********************基础使用****************************/
 
-
-/***************通过控制点画贝塞尔曲线********************/
 /*
+/***************通过控制点画贝塞尔曲线********************/
 //开始点
 let startPoint   = CGPointMake(50, 100)
 //结束点
@@ -98,7 +99,9 @@ myView.layer.addSublayer(layer3)
 myView.layer.addSublayer(layer4)
 
 /***************通过控制点画贝塞尔曲线********************/
+*/
 
+/*
 /***********************添加动画****************************/
 
 private func animation1() {
@@ -169,8 +172,8 @@ myView.layer.addSublayer(layer)
 */
 
 
+/*
 /******************画微信眼睛**********************/
-
 //first
 let eyeFirstLightLayer = CAShapeLayer()
 let centerPoint        = CGPointMake(CGRectGetWidth(myView.frame) * 0.5, CGRectGetHeight(myView.frame) * 0.5)
@@ -340,6 +343,6 @@ topEyeLayerAnimation()
 //眼睛下部分动画
 eyeBottomAnimation()
 /******************画微信眼睛**********************/
-
+*/
 
 
